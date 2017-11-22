@@ -10,15 +10,14 @@
  */
 
 import React from 'react';
-// import { FormattedMessage } from 'react-intl';
-// import messages from './messages';
-import LoginField from '../../components/LoginField';
+import { FormattedMessage } from 'react-intl';
+import messages from './messages';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
-        <LoginField />
+        <FormattedMessage {...messages.header} />
       </div>
     );
   }
